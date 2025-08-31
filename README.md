@@ -12,11 +12,17 @@ A constructor in C++ is a special member function of a class that is automatical
 * Default Constructor – No parameters, used to set default values or take input.
 
 class Student {
+
     int prn;
+    
 public:
+
     Student() {  // default constructor
+    
         prn = 70;
+        
     }
+    
 };
 
 * Parameterized Constructor – Takes parameters to set values at the time of object creation.
@@ -53,6 +59,8 @@ public:
 
 ## Program 1: Default Constructor (In-class)
 
+## Explanation:
+
 The class Marks has its default constructor defined inside the class. When an object is created, it prompts the user for details and stores them. Demonstrates how in-class constructors handle initialization.
 
 ## Algorithm:
@@ -68,6 +76,8 @@ The class Marks has its default constructor defined inside the class. When an ob
 5. Stop.
 
 ## Program 2: Default Constructor (Out-class)
+
+## Explanation:
 
 The default constructor is declared inside the class but defined outsid using the scope resolution operator ::. When the object is created, it accepts employee details. A separate display() function shows stored information, illustrating separation of declaration and definition.
 
@@ -101,6 +111,8 @@ The default constructor is declared inside the class but defined outsid using th
 
 ## Program 3: Parameterized Constructor
 
+## Explanation:
+
 This program defines a class Num with two integers as data members. It uses a parameterized constructor to initialize the values of num1 and num2 at the time of object creation. The display() function is used to print these values. In main(), when object n1 is created with values (45, 21), the constructor sets them, and display() outputs the result.
 
 ## Algorithm:
@@ -118,6 +130,8 @@ This program defines a class Num with two integers as data members. It uses a pa
 6. End
 
 ## Program 4: Copy Constructor
+
+## Explanation:
 
 This program demonstrates the use of a copy constructor in C++. The class Num has two integers that are initialized either through a parameterized constructor or by copying another object. When object n2 is created from n1, the copy constructor is called, and it duplicates the values of n1 into n2. The display() function prints the values of both objects.
 
@@ -139,6 +153,8 @@ This program demonstrates the use of a copy constructor in C++. The class Num ha
 
 ## Program 5: Copy Constructor
 
+## Explanation:
+
 This program defines a class Book with data members for book name, author, and price. It uses a parameterized constructor to initialize these details when an object is created. A copy constructor is also defined, which duplicates the values of one object into another and prints a message. In main(), book details are entered, stored in object b1, displayed, and then copied into b2 using the copy constructor.
 
 ## Algorithm:
@@ -158,6 +174,8 @@ This program defines a class Book with data members for book name, author, and p
 7. End
 
 ## Program 6: Destructor
+
+## Explanation:
 
 This program demonstrates the use of constructors and destructors with a static counter. Each time a Book object is created, the constructor increments count and displays the number of objects. When an object goes out of scope, the destructor is called, decrementing count and showing how many objects remain. It illustrates object creation and destruction order in C++.
 
@@ -180,6 +198,8 @@ This program demonstrates the use of constructors and destructors with a static 
 6. End
 
 ## Program 7: Destructor
+
+## Explanation:
 
 This program shows the working of a destructor in C++. The class Date has only a destructor, which prints "Destructor Called" whenever an object is destroyed. In main(), four objects (d1, d2, d3, d4) are created, and additional temporary objects are created inside the loop. As each object goes out of scope, its destructor is automatically invoked. Here, constructor isn't specifically written but, by default constructor is present in the code.
 
