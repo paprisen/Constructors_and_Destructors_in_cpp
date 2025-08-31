@@ -71,6 +71,33 @@ The class Marks has its default constructor defined inside the class. When an ob
 
 The default constructor is declared inside the class but defined outsid using the scope resolution operator ::. When the object is created, it accepts employee details. A separate display() function shows stored information, illustrating separation of declaration and definition.
 
+## Algorithm:
+
+1. Start.
+
+2. Define a class Date:
+
+* int day
+
+* int month
+
+* int year
+
+3. Declare a default constructor Date() in the class.
+
+4. Declare a member function display() to show the date.
+
+5. Define the constructor Date():
+
+* Prompt the user to enter day, and read the value into day.
+
+* Prompt the user to enter month, and read the value into month.
+
+* Prompt the user to enter year, and read the value into year.
+
+6. In the main() function: Create an object d of class Date.
+
+7. End.
 
 ## Program 3: Parameterized Constructor
 
