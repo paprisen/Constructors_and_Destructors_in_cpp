@@ -12,17 +12,11 @@ A constructor in C++ is a special member function of a class that is automatical
 * Default Constructor – No parameters, used to set default values or take input.
 
 class Student {
-
-    int prn;
-    
+   int prn;
 public:
-
-    Student() {  // default constructor
-    
-        prn = 70;
-        
-    }
-    
+ Student() {  // default constructor
+   prn = 70;     
+ } 
 };
 
 * Parameterized Constructor – Takes parameters to set values at the time of object creation.
