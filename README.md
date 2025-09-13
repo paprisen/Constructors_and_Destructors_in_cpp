@@ -10,7 +10,7 @@ Tools Used: VS Code.
 A constructor in C++ is a special member function of a class that is automatically called when an object of the class is created. Its primary purpose is to initialize the data members of the class.
 
 * Default Constructor – No parameters, used to set default values or take input.
-
+```
 class Student {
    int prn;
 public:
@@ -18,9 +18,11 @@ public:
    prn = 70;     
  } 
 };
+```
 
 * Parameterized Constructor – Takes parameters to set values at the time of object creation.
 
+```
   class Student {
     int prn;
 public:
@@ -28,9 +30,11 @@ public:
         prn = p;
     }
 };
+```
 
 * Copy Constructor – Creates a new object by copying the data of an existing object.
 
+```
 class Student {
     int prn;
 public:
@@ -39,17 +43,20 @@ public:
         prn = s.prn;
     }
 };
+```
 
 ## Destructors in Cpp:
 
 A destructor is a special member function in C++ that is automatically called when an object goes out of scope or is explicitly deleted. Its main purpose is to release resources that the object may have acquired during its lifetime.
 
+```
 class Student {
 public:
     ~Student() {  // destructor
         cout << "Destructor called, object destroyed" << endl;
     }
 };
+```
 
 ## Program 1: Default Constructor (In-class)
 
